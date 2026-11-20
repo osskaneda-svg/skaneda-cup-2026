@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SKANEDA CUP 2026</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #17243a;
+}
+
+nav {
+    background: #101c30;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.hero {
+    background: linear-gradient(120deg, #101c30, #233d60);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero small {
+    color: #d6b66c;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 8vw, 65px);
+    margin: 20px 0;
+}
+
+.hero p {
+    color: #dce3ed;
+    line-height: 1.8;
+}
+
+.btn {
+    display: inline-block;
+    background: #d6b66c;
+    color: #17243a;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.heading h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #687486;
+}
+
+.competitions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 28px;
+    border: 1px solid #e2e5eb;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #00000012;
+}
+
+.card .number {
+    color: #b18b40;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    font-size: 23px;
+}
+
+.card p {
+    color: #687486;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.card a {
+    display: inline-block;
+    color: #a17a2e;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 22px;
+    font-size: 13px;
+}
+
+.about {
+    background: #e9edf2;
+    text-align: center;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 15px auto;
+    color: #596579;
+    line-height: 1.8;
+}
+
+footer {
+    background: #101c30;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+@media(max-width:600px) {
+    nav {
+        padding: 17px 5%;
+    }
+
+    .competitions {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+
+    .hero {
+        padding: 75px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">SKANEDA CUP</div>
+    <a href="#competition">PERLOMBAAN</a>
+</nav>
+
+<header class="hero">
+    <small>SMK NEGERI 2 LAMONGAN PRESENTS</small>
+    <h1>SKANEDA CUP 2026</h1>
+    <p>One Competition. Many Achievements.</p>
+    <p>Ajang kompetisi dan kreativitas pelajar antar sekolah.</p>
+    <a href="#competition" class="btn">JELAJAHI PERLOMBAAN</a>
+</header>
+
+<section id="competition">
+    <div class="heading">
+        <h2>Cabang Perlombaan</h2>
+        <p>Pilih kompetisi yang ingin kamu ikuti.</p>
+    </div>
+
+    <div class="competitions">
+
+        <div class="card">
+            <span class="number">01 / SPORT</span>
+            <h3>Futsal</h3>
+            <p>Kompetisi futsal antar pelajar dengan kategori putra dan putri.</p>
+            <a href="futsal.html">LIHAT DETAIL →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">02 / SPORT</span>
+            <h3>Voli</h3>
+            <p>Kompetisi bola voli antar pelajar dengan kategori putra dan putri.</p>
+            <a href="voli.html">LIHAT DETAIL →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">03 / CREATIVE</span>
+            <h3>Fashion</h3>
+            <p>Ajang kreativitas dan penampilan dalam kompetisi fashion.</p>
+            <a href="fashion.html">LIHAT DETAIL →</a>
+        </div>
+
+        <div class="card">
+            <span class="number">04 / SPORT</span>
+            <h3>Handball</h3>
+            <p>Kompetisi handball antar pelajar dengan kategori putra dan putri.</p>
+            <a href="handball.html">LIHAT DETAIL →</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <div class="heading">
+        <h2>Tentang SKANEDA CUP</h2>
+    </div>
+    <p>
+        SKANEDA CUP 2026 merupakan ajang perlombaan
+        antar sekolah yang diselenggarakan oleh
+        SMK Negeri 2 Lamongan sebagai wadah
+        kompetisi, kreativitas, sportivitas,
+        dan pengembangan potensi pelajar.
+    </p>
+</section>
+
+<footer>
+    <strong>SKANEDA CUP 2026</strong>
+    <p>SMK Negeri 2 Lamongan</p>
+    <p>Compete with Spirit, Achieve with Pride.</p>
+</footer>
+
+</body>
+</html>
