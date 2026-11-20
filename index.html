@@ -4,18 +4,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SKANEDA CUP 2026 | Official Website</title>
-
+<title>SKANEDA CUP 2026</title>
 <style>
-.brand img {
-    width: 42px;
-    height: 42px;
-    object-fit: contain;
-    background: white;
-    border-radius: 7px;
-    padding: 3px;
-
-<head>
 * {
     margin: 0;
     padding: 0;
@@ -25,265 +15,157 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f5f7;
+    background: #f5f6f8;
     color: #17243a;
 }
 
 nav {
     background: #101c30;
     color: white;
-    padding: 15px 7%;
+    padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #ffffff20;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    z-index: 10;
 }
 
 .logo {
-    width: 40px;
-    height: 40px;
-    background: #d6b66c;
-    color: #101c30;
-    border-radius: 8px;
-    display: grid;
-    place-items: center;
+    font-size: 21px;
     font-weight: bold;
-}
-
-.brand h3 {
-    font-size: 17px;
     letter-spacing: 1px;
-}
-
-.brand small {
-    color: #d6b66c;
-    font-size: 10px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 12px;
-    margin-left: 15px;
+    font-size: 13px;
 }
 
 .hero {
-    min-height: 590px;
-    background:
-    linear-gradient(90deg, #101c30f5, #101c3090),
-    url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 70px 9%;
+    background: linear-gradient(120deg, #101c30, #233d60);
     color: white;
+    text-align: center;
+    padding: 90px 20px;
 }
 
-.hero-content {
-    max-width: 650px;
-    animation: muncul 1s ease;
-}
-
-.tag {
+.hero small {
     color: #d6b66c;
     letter-spacing: 3px;
-    font-size: 12px;
     font-weight: bold;
 }
 
 .hero h1 {
-    font-size: clamp(42px, 9vw, 76px);
-    margin: 22px 0 12px;
-    line-height: 1.05;
-}
-
-.hero h1 span {
-    color: #d6b66c;
+    font-size: clamp(38px, 8vw, 65px);
+    margin: 20px 0;
 }
 
 .hero p {
-    color: #e0e5ed;
+    color: #dce3ed;
     line-height: 1.8;
-    max-width: 500px;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 30px;
     background: #d6b66c;
     color: #17243a;
-    padding: 15px 25px;
+    padding: 14px 28px;
+    border-radius: 6px;
     text-decoration: none;
-    border-radius: 5px;
     font-weight: bold;
-    font-size: 12px;
-    transition: .3s;
-}
-
-.btn:hover {
-    background: white;
-    transform: translateY(-3px);
+    margin-top: 25px;
 }
 
 section {
-    padding: 80px 7%;
+    padding: 65px 7%;
 }
 
 .heading {
     text-align: center;
-    margin-bottom: 40px;
-}
-
-.heading small {
-    color: #b18b40;
-    font-weight: bold;
-    letter-spacing: 2px;
+    margin-bottom: 35px;
 }
 
 .heading h2 {
-    font-size: 32px;
-    margin: 12px 0;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .heading p {
-    color: #778294;
-    font-size: 14px;
+    color: #687486;
 }
 
 .competitions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    max-width: 1050px;
+    gap: 22px;
+    max-width: 950px;
     margin: auto;
 }
 
 .card {
     background: white;
     border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #e4e7eb;
+    padding: 28px;
+    border: 1px solid #e2e5eb;
     transition: .3s;
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 15px 30px #00000012;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px #00000012;
 }
 
-.card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 23px;
-}
-
-.card-content small {
+.card .number {
     color: #b18b40;
     font-weight: bold;
+    font-size: 13px;
 }
 
 .card h3 {
-    margin: 12px 0;
+    margin: 15px 0 10px;
     font-size: 23px;
 }
 
 .card p {
-    color: #778294;
-    line-height: 1.7;
-    font-size: 13px;
+    color: #687486;
+    line-height: 1.6;
+    font-size: 14px;
 }
 
 .card a {
     display: inline-block;
     color: #a17a2e;
-    text-decoration: none;
-    font-size: 12px;
     font-weight: bold;
-    margin-top: 20px;
+    text-decoration: none;
+    margin-top: 22px;
+    font-size: 13px;
 }
 
 .about {
-    background: #101c30;
-    color: white;
+    background: #e9edf2;
     text-align: center;
 }
 
 .about p {
-    max-width: 680px;
-    margin: 18px auto 0;
-    line-height: 1.9;
-    color: #cbd4e1;
-    font-size: 14px;
-}
-
-.register {
-    text-align: center;
-    background: #e9edf2;
-}
-
-.register h2 {
-    font-size: 29px;
-}
-
-.register p {
-    color: #687486;
-    margin-top: 12px;
+    max-width: 650px;
+    margin: 15px auto;
+    color: #596579;
+    line-height: 1.8;
 }
 
 footer {
-    background: #0b1423;
+    background: #101c30;
     color: white;
     text-align: center;
-    padding: 35px 15px;
-    line-height: 1.9;
+    padding: 28px 15px;
+    font-size: 13px;
+    line-height: 1.8;
 }
 
-footer small {
-    color: #aab5c5;
-}
-
-@keyframes muncul {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media(max-width:650px) {
+@media(max-width:600px) {
     nav {
-        padding: 14px 5%;
-    }
-
-    nav a {
-        margin-left: 8px;
-        font-size: 10px;
-    }
-
-    .brand h3 {
-        font-size: 14px;
-    }
-
-    .hero {
-        min-height: 520px;
-        padding: 55px 7%;
+        padding: 17px 5%;
     }
 
     .competitions {
@@ -291,135 +173,87 @@ footer small {
     }
 
     section {
-        padding: 60px 6%;
+        padding: 50px 6%;
     }
 
-    .card img {
-        height: 180px;
+    .hero {
+        padding: 75px 18px;
     }
 }
 </style>
-    
-}
 </head>
 
 <body>
 
 <nav>
-    <div class="brand">
-    <img src="logo-sekolah.png" alt="Logo SMK Negeri 2 Lamongan">
-    <img src="logo-skaneda.png" alt="Logo SKANEDA CUP">
-
-    <div>
-        <h3>SKANEDA CUP</h3>
-        <small>OFFICIAL EVENT 2026</small>
-    </div>
-</div>
-
-    <div>
-        <a href="#">HOME</a>
-        <a href="#competition">LOMBA</a>
-        <a href="#about">ABOUT</a>
-    </div>
+    <div class="logo">SKANEDA CUP</div>
+    <a href="#competition">PERLOMBAAN</a>
 </nav>
 
 <header class="hero">
-    <div class="hero-content">
-        <div class="tag">SMK NEGERI 2 LAMONGAN PRESENTS</div>
-
-        <h1>SKANEDA<br><span>CUP 2026</span></h1>
-
-        <p>
-            Satu ajang kompetisi untuk menunjukkan
-            kemampuan, kreativitas, sportivitas,
-            dan semangat berprestasi antar pelajar.
-        </p>
-
-        <a href="#competition" class="btn">
-            EXPLORE COMPETITIONS →
-        </a>
-    </div>
+    <small>SMK NEGERI 2 LAMONGAN PRESENTS</small>
+    <h1>SKANEDA CUP 2026</h1>
+    <p>One Competition. Many Achievements.</p>
+    <p>Ajang kompetisi dan kreativitas pelajar antar sekolah.</p>
+    <a href="#competition" class="btn">JELAJAHI PERLOMBAAN</a>
 </header>
 
 <section id="competition">
-
     <div class="heading">
-        <small>CHOOSE YOUR COMPETITION</small>
         <h2>Cabang Perlombaan</h2>
-        <p>Temukan kompetisi yang sesuai dengan kemampuanmu.</p>
+        <p>Pilih kompetisi yang ingin kamu ikuti.</p>
     </div>
 
     <div class="competitions">
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=800" alt="Futsal">
-            <div class="card-content">
-                <small>01 / SPORTS</small>
-                <h3>Futsal</h3>
-                <p>Kompetisi futsal antar pelajar kategori putra dan putri.</p>
-                <a href="futsal.html">SELENGKAPNYA →</a>
-            </div>
+            <span class="number">01 / SPORT</span>
+            <h3>Futsal</h3>
+            <p>Kompetisi futsal antar pelajar dengan kategori putra dan putri.</p>
+            <a href="futsal.html">LIHAT DETAIL →</a>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1592656670411-9d4a2b5b7b3e?w=800" alt="Voli">
-            <div class="card-content">
-                <small>02 / SPORTS</small>
-                <h3>Voli</h3>
-                <p>Ajang pertandingan bola voli antar pelajar kategori putra dan putri.</p>
-                <a href="voli.html">SELENGKAPNYA →</a>
-            </div>
+            <span class="number">02 / SPORT</span>
+            <h3>Voli</h3>
+            <p>Kompetisi bola voli antar pelajar dengan kategori putra dan putri.</p>
+            <a href="voli.html">LIHAT DETAIL →</a>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=800" alt="Fashion">
-            <div class="card-content">
-                <small>03 / CREATIVITY</small>
-                <h3>Fashion</h3>
-                <p>Wadah kreativitas dan ekspresi dalam kompetisi fashion.</p>
-                <a href="fashion.html">SELENGKAPNYA →</a>
-            </div>
+            <span class="number">03 / CREATIVE</span>
+            <h3>Fashion</h3>
+            <p>Ajang kreativitas dan penampilan dalam kompetisi fashion.</p>
+            <a href="fashion.html">LIHAT DETAIL →</a>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800" alt="Handball">
-            <div class="card-content">
-                <small>04 / SPORTS</small>
-                <h3>Handball</h3>
-                <p>Kompetisi handball antar pelajar kategori putra dan putri.</p>
-                <a href="handball.html">SELENGKAPNYA →</a>
-            </div>
+            <span class="number">04 / SPORT</span>
+            <h3>Handball</h3>
+            <p>Kompetisi handball antar pelajar dengan kategori putra dan putri.</p>
+            <a href="handball.html">LIHAT DETAIL →</a>
         </div>
 
     </div>
 </section>
 
-<section class="about" id="about">
+<section class="about">
     <div class="heading">
-        <small style="color:#d6b66c">ABOUT THE EVENT</small>
-        <h2>About SKANEDA CUP</h2>
+        <h2>Tentang SKANEDA CUP</h2>
     </div>
-
     <p>
         SKANEDA CUP 2026 merupakan ajang perlombaan
         antar sekolah yang diselenggarakan oleh
-        SMK Negeri 2 Lamongan. Kegiatan ini menjadi
-        wadah bagi para pelajar untuk mengembangkan
-        potensi, membangun sportivitas, dan
-        menciptakan pengalaman kompetisi yang berkesan.
+        SMK Negeri 2 Lamongan sebagai wadah
+        kompetisi, kreativitas, sportivitas,
+        dan pengembangan potensi pelajar.
     </p>
-</section>
-
-<section class="register">
-    <h2>Ready to Compete?</h2>
-    <p>Pilih cabang perlombaan dan daftarkan timmu sekarang.</p>
-    <a href="#competition" class="btn">MULAI PENDAFTARAN →</a>
 </section>
 
 <footer>
     <strong>SKANEDA CUP 2026</strong>
-    <p>SMK NEGERI 2 LAMONGAN</p>
-    <small>Compete with Spirit, Achieve with Pride.</small>
+    <p>SMK Negeri 2 Lamongan</p>
+    <p>Compete with Spirit, Achieve with Pride.</p>
 </footer>
 
 </body>
